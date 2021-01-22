@@ -11,9 +11,10 @@ namespace ClassMetotDemo
             // MusteriManager sınıfı oluşturunuz. Musteri parametresi alarak Musteri 
             // ekleme, listeleme, silme gibi metotları simule ediniz.
 
-            Musteri musteri = new Musteri() { Adi = "Ömer", Soyadi = "Nalçacı", Adres = "Çorum", Eposta = "nalcaciomer@outlook.com", Id = 1 };
+            Musteri musteri = new Musteri() { Id = 1, Adi = "Ömer", Soyadi = "Nalçacı", Eposta = "nalcaciomer@outlook.com" };
 
             MusteriManager musteriManager = new MusteriManager();
+
             musteriManager.Listele(musteri);
 
             musteriManager.Ekle(musteri);

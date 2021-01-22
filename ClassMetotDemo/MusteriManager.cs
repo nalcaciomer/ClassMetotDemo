@@ -9,8 +9,9 @@ namespace ClassMetotDemo
         public void Listele(Musteri musteri)
         {
             Console.WriteLine(musteri.Id + ". Müşteri");
-            Console.WriteLine("Adı: " + musteri.Adi + " Soyadı: " + musteri.Soyadi + " Adres: " + musteri.Adres + " Eposta: " + musteri.Eposta);
+            Console.WriteLine("Adı: " + musteri.Adi + " Soyadı: " + musteri.Soyadi  + " Eposta: " + musteri.Eposta);
         }
+
         public void Ekle(Musteri musteri)
         {
             Console.WriteLine("Sisteme Müşteri Ekleme İşlemi Gerçekleştiriliyor...");
@@ -18,6 +19,7 @@ namespace ClassMetotDemo
             Console.WriteLine("Müşteri Bilgileri: ");
             Listele(musteri);
         }
+
         public void Guncelle(Musteri musteri)
         {
             Console.WriteLine("Müşterinin Hangi Bilgisini Güncellemek İstiyorsunuz? (1-Ad, 2-Soyad, 3-Adres,4-Eposta");
@@ -36,12 +38,6 @@ namespace ClassMetotDemo
                     Listele(musteri);
                     break;
                 case "3":
-                    Console.WriteLine("Müşterinin Yeni Adresini Yazınız: ");
-                    musteri.Adres = Console.ReadLine();
-                    Console.WriteLine("Müşteri Adresi Başarıyla Güncellendi!");
-                    Listele(musteri);
-                    break;
-                case "4":
                     Console.WriteLine("Müşterinin Yeni Epostasını Yazınız: ");
                     musteri.Eposta = Console.ReadLine();
                     Console.WriteLine("Müşteri Eposta Başarıyla Güncellendi!");
@@ -52,6 +48,7 @@ namespace ClassMetotDemo
                     break;
             }
         }
+
         public void Sil(Musteri musteri)
         {
             Console.WriteLine("Müşteriyi Silme İşlemini Onaylıyor musunuz? (y / n)");
@@ -65,6 +62,5 @@ namespace ClassMetotDemo
                 Console.WriteLine("Müşteri Silme İşlemi İptal Edildi!");
             }
         }
-
     }
 }
